@@ -132,21 +132,37 @@ body {
 }
 
 @media (max-width: 1270px) {
-    
     .header {
-    padding: 10%;
+        padding: 5% 0 0 0;
+        text-align: center;
     }
 
     .header__menu {
-        justify-content: center;
-    }   
+        flex-direction: column;
+        align-items: center; /* centrado */
+        gap: 24px;
+        justify-content: center; /* centrado vertical si es necesario */
+        width: 100%;
+    }
+
+    .header__menu__link {
+        font-size: 1.2rem;
+        padding: 8px 0;
+    }
 
     .presentacion {
         flex-direction: column-reverse;
         padding: 5%;
+        gap: 40px;
     }
 
     .presentacion__contenido {
-        width: auto;
+        width: 100%;
     }
-}   
+
+    .presentacion__imagen {
+        width: 100%;
+        max-width: 350px;
+        align-self: center;
+    }
+}
